@@ -4,7 +4,8 @@
   "description": "API",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ."
+    "start": "nest start",
+    "build":"nest build"
   },
   "author": "Jasson Ferley Lara",
   "license": "ISC",

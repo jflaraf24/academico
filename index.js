@@ -10,6 +10,8 @@ conectarBD(); // extableciendo conexion con la base de datos
 app.use(express.json());
 app.use(cors());
 app.use('/api/comentarios', require('./routes/comentario'));
+app.use('/api/estudiantes', require('./routes/estudiante'));
+
 
 app.listen(5000, () => {
     console.log('El servidor se ha iniciado en el puerto 5000');

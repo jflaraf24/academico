@@ -3,12 +3,16 @@ const mongoose = require('mongoose');
 const ComentarioSchema = mongoose.Schema( {
     nombre: {
        type: String,
-       required: true
+       required: false
     },
     comentario: {
        type: String,
-       required: true
-    }
+       required: false
+    },
+    fecha: {
+      type: String,
+      required: false
+   }
 });
 
 module.exports = mongoose.model('Comentario', ComentarioSchema);
